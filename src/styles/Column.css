@@ -1,0 +1,20 @@
+.title-container h2 {
+    -webkit-text-stroke: 2px black;  /* Color y grosor del contorno */
+    color: transparent;  /* Hace que el relleno del texto sea transparente */
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+  
+.task-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+  
+.task-wrapper {
+    flex: 0 0 42%; /* Ocupará cerca del 50% del ancho, dejando un poco de espacio entre tareas */
+    margin: 1%; /* Pequeño margen entre tareas */
+}

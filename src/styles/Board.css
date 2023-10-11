@@ -1,0 +1,25 @@
+.board-container {
+    display: flex;
+    gap: 0;
+    justify-content: center; 
+    width: 100%;
+    max-width: 1300px;
+    margin: 50px auto; /* Centrar horizontalmente */
+    padding: 20px;
+}
+
+.column-container {
+    flex: 1;
+    border-left: 2px solid #000;
+    min-height: 800px;
+}
+
+.column-container:first-child {
+    border-left: none; /* Elimina la línea de la primera columna */
+}
+
+.title-container {
+    border-bottom: 2px solid #000;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}

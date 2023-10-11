@@ -1,0 +1,30 @@
+.task-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    max-width: 160px;
+    height: 100px;
+    padding-top: 20px;
+    position: relative;
+    box-shadow: 2px 8px 8px rgba(0,0,0,0.2); /* Sombreado suave */
+    background-color: rgba(255, 253, 208, 0.8); /* Color amarillo pálido con opacidad */
+    font-family: 'Patrick Hand', cursive;
+    overflow-wrap: break-word; /* Para que el texto se ajuste al ancho del contenedor */
+    overflow-y: auto; /* Barra de desplazamiento vertical. */
+}
+
+.task-container::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20%; /* Ancho de la cinta */
+    height: 20px; /* Altura de la cinta */
+    background-color: rgba(240, 240, 240, 0.8);
+    border: 1px solid #ccc; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
